@@ -38,6 +38,9 @@ $ rump -from redis://127.0.0.1:6379/1 -to redis://127.0.0.1:6379/2 -silent
 
 # Sync with TTLs.
 $ rump -from redis://127.0.0.1:6379/1 -to redis://127.0.0.1:6379/2 -ttl
+
+# Sync with pass.
+$ rump -from  -from redis://NODEA:6379/1 -to redis://:PASSWORD@NODEB:6379/1
 ```
 
 ## Features
